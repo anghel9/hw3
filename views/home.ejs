@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head.ejs")%>
+</head>
+<body class="text-center">
+    <%- include("partials/nav.ejs") %>
+    
+    <h1 class="bg-warning text-white p-4">Food Finder</h1><br>
+
+    <form action="/searchByKeyword" method="GET">
+      <label>Seach by main ingredient: <input type="text" name="keyword" minlength="1" maxlength="20"></label>
+      <button class="btn btn-outline-success">Search</button>
+    </form>
+    <br><hr><br>
+
+    <form action="/searchByLetter" method="GET">
+      <label>Seach by first letter: <input type="text" name="letter" minlength="1" maxlength="1" required pattern="[A-Za-z]"></label>
+      <button class="btn btn-outline-success">Search</button>
+    </form>
+    <br><hr><br>
+
+    <form action="/randomBtn" method="GET">
+      <button class="btn btn-outline-success">Random Food</button>
+    </form>
+
+
+
+    <footer>
+        <%- include("partials/foot.ejs")%>
+    </footer>
+</body>
+</html>

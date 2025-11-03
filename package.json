@@ -1,0 +1,20 @@
+{
+  "name": "hw3",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "fetch": "^1.1.0",
+    "mysql2": "^3.15.3",
+    "rick-and-morty-forever": "^0.0.15"
+  }
+}
